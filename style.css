@@ -1,0 +1,44 @@
+.title
+{
+  text-align: center;
+  color: #F4AF00;
+}
+
+.pagina2
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: #3087AD;
+  padding: 10px;
+}
+
+.locals
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  background-color: #3087AD;
+
+}
+p.Ayesha
+{
+  background-color: #06B1FB;
+}
+p.Rafi
+{
+  background-color: #06B1FB;
+  
+}
+.Indus{
+  padding: 10px
+
+}
+
+.Ganges{
+  padding: 10px;
+
+}
+figcaption {
+  font-size: 10px;
+}

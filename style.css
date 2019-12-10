@@ -33,23 +33,7 @@ h3.locals_content{
 p.locals_content{
 
 }
-/*.Ayesha
-{
-  background-color: #06B1FB;
-  margin-right: 100px;
-}
-h3.Ayesha{
-  font-size: 50px;
-  color: #0017A7;
-}
-.Rafi
-{
-  background-color: #06B1FB;
-  margin-right: 100px;
-}
-h3.Rafi{
-  font-size: 50px;
-  color: #0017A7;*/
+
 }
 .Indus{
   padding: 10px
@@ -67,4 +51,15 @@ figcaption {
 .img_locals{
 width: 100%;
 height: 100%;
+}
+
+.mySlides {display:none;}
+
+#slideshow{
+  max-width: 500px;
+}
+
+.slideshow_text{
+  color: white;
+  font-size: 8px;
 }

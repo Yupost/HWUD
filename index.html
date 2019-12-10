@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
 <title>Indus-Ganges</title>
 </head>
@@ -54,6 +55,77 @@
     <p >Rafi is een Software Engineer voor <a href="http://www.google.com">Google</a>. Hij Woont en werkt in Dhaka, de hoofdstad van Bangladesh. Rafi is geboren in Mehendiganj, dat net buiten Dhaka ligt. Door het succes van zijn ouders die een rijstplanage hadden kon hij een ICT opleiding doen in Lakshmipur. Omdat hij zo succesvol was in de ICT-branche kreeg hij een baan aangeboden van Google die in de hoofdstad Dhaka gevestigd zit. Sindsdien woont hij in Dhaka samen met zijn ouders die hij mantelzorgt.</p>
   </div>
 </div>
+
+<!--SLIDESHOW-->
+
+<div class="w3-container">
+  <h2>Urban Delta</h2>
+  <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+</div>
+
+<div class="w3-content w3-display-container" id="slideshow">
+
+<div class="w3-display-container mySlides">
+  <img src="Images\bangladesh1.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-orange">
+    <p class="slideshow_text">Dhaka, hoofdstad van Bangladesh</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="Images\pakistan1.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-orange">
+    <p class="slideshow_text">Pakistan heeft een groot afval probleem</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="Images\bangladesh2.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-orange">
+    <p class="slideshow_text">Bangladesh heeft sterke welvarende kernen</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="Images\pakistan2.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-orange">
+    <p class="slideshow_text">Hoofdstad, Karachi, aan de Indus Delta</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="Images\bangladesh3.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-orange">
+    <p class="slideshow_text">Bangladesh wordt vaak getroffen door overstromingen</p>
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-blue" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-blue" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
 
 
 

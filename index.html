@@ -3,22 +3,40 @@
 <head>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="script.js"></script>
+  <script src="leaflet.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+
 <title>Indus-Ganges</title>
 </head>
 <body>
+  <!--NAVBAR-->
+  <div id="navbar">
+    <img src="Images/Logo.png" alt="" class="logo">
+    <a href="#Top">Top</a>
+    <a href="#locals">Meet the locals</a>
+    <a href="#urbandelta">Urban Delta</a>
+  </div>
   <!-- Pagina 1 -->
+<a name="Top"></a>
   <div>
   <img src="Images/Mockup_Homepage.jpg" alt="head" style="width: 100%;">
   </div>
   <!-- Pagina 2 -->
   <div class="pagina2">
-    <div class="Indus">
+
+    <div class="bloktekst Indus">
   <h2 style=" color: #0017A7; background-color: #F4AF00;">Indus</h2>
   <p style=" color: white;">De Indus delta is een delta die ligt in Pakistan. De Indus rivier mond uit in de Arabische zee. Met een oppervlakte van 41.440km² en met 1,2 miljoen inwoners is het vergeleken met de Ganges en vrij kleine delta, maar mag natuurlijk niet onderschat worden want het blijft een enorme delta. Het klimaat is aride. De uitdagingen die de Indus aan haar mensen geeft zijn aardbevingen wat tsunamies veroorzaakt, overstromingen, uitdroging, degradatie van hulpbronnen. </p>
   </div>
 
 
-  <div class="Ganges">
+  <div class="bloktekst Ganges">
   <h2 style=" color: #0017A7; background-color: #F4AF00;">Ganges</h2>
   <p style=" color: white;">De Ganges delta, ook wel de Ganges-Brahmaputra Delta genoemd, is s ’werelds grootste delta met een oppervlakte van 105.000 km². De delta bevindt zich in Bangladesh, een land omringd door India en nog een kleine gedeelte in India zelf. Hier leven ruim 130 miljoen mensen in het delta gebied. Deze mensen hebben dagelijks te maken met de uitdagingen die de Ganges geeft. Uitdaging zoals overstroming, onregelmatige moessons, grote hoeveelheid smeltwater die vanuit de Himalaya’s komt. Het klimaat is er tropisch met hoge temperaturen en veel vochtigheid.</p>
   </div>
@@ -40,28 +58,35 @@
   </div>
 
   <!-- LOCALS -->
+<a name="locals"></a>
 <h2 style="color: #0017A7; background-color: #F4AF00;">Meet the locals</h2>
 <div class="locals">
-  <div> <img src="Images\pakistan_logo.png" alt="" style="width: 100%; height: 100%;"></div>
-  <div > <img src="Images\Aeysha.png" alt="" class="img_locals"></div>
+  <div class="locals_logo"> <img src="Images\pakistan_logo.png" alt=""></div>
+  <div class="locals_img"> <img src="Images\Aeysha.png" alt="" class="img_locals"></div>
   <div class="locals_content">
-<h3 class="locals_content">Ayesha</h3>
+<h3 class="">Ayesha</h3>
     <p >Ayesha is geboren en getogen in Karachi en werkt nu als een taxichauffeur met een tuktuk voor een taxibedrijfje in Karachi. Haar jeugd heeft ze doorgebracht op een boerderijtje net buiten de stad in de Indus delta gebied, maar door de bedijking van de Indus is het delta gebied niet meer vruchtbaar en woont ze nu in een appartement in Karachi en werkt ze geld bij elkaar voor haar studie.</p>
   </div>
-  <div> <img src="Images\bangladesh_logo.png" alt="" style="width: 100%; height: 100%;"></div>
-  <div> <img src="Images\Rafi.png" alt="" class="img_locals"></div>
+</div>
+<div class="locals">
+  <div  class="locals_logo"> <img src="Images\bangladesh_logo.png" alt=""></div>
+  <div  class="locals_img"> <img src="Images\Rafi.png" alt="" class="img_locals"></div>
   <div class="locals_content">
-    <h3 class="locals_content">Rafi</h3>
+    <h3 class="">Rafi</h3>
     <p >Rafi is een Software Engineer voor <a href="http://www.google.com">Google</a>. Hij Woont en werkt in Dhaka, de hoofdstad van Bangladesh. Rafi is geboren in Mehendiganj, dat net buiten Dhaka ligt. Door het succes van zijn ouders die een rijstplanage hadden kon hij een ICT opleiding doen in Lakshmipur. Omdat hij zo succesvol was in de ICT-branche kreeg hij een baan aangeboden van Google die in de hoofdstad Dhaka gevestigd zit. Sindsdien woont hij in Dhaka samen met zijn ouders die hij mantelzorgt.</p>
   </div>
 </div>
 
 <!--SLIDESHOW-->
 
+<h2 style=" color: #0017A7; background-color: #F4AF00;">Urban Delta</h2>
+<div class="urbandelta">
 <div class="w3-container">
-  <h2>Urban Delta</h2>
+
   <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
 </div>
+
+
 
 <div class="w3-content w3-display-container" id="slideshow">
 
@@ -104,6 +129,7 @@
 <button class="w3-button w3-display-right w3-blue" onclick="plusDivs(1)">&#10095;</button>
 
 </div>
+</div>
 
 <script>
 var slideIndex = 1;
@@ -124,6 +150,34 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 </script>
+
+<!--URBAN DELTA-->
+<div class="urbandelta">
+<a name="urbandelta"></a>
+<p>Pakistan mag wel een aride klimaat hebben, maar de Indus is een levensader voor de bevolking, zonder deze rivier en de vruchtbare delta zou Pakistan er heel stuk slechter uitzien: een levenloze woestijn. De Indus geeft dan ook leven aan de vele bevolking kernen van Pakistan. Aan deze rivier zitten ook alle grote steden gevestigd. Dit komt doordat het klimaat van Pakistan aride is, hierdoor vestigt een groot gedeelte van de populatie al honderden jaren langs de vruchtbare Indus rivier. <br> <br> Bangladesh is, op microstaten na, het meeste dichtstbevolkte land ter wereld dit komt door de Ganges en Brahmaputra rivieren die samen de vruchtbare Ganges Delta vormen, de grootste delta ter wereld. Er wonen in totaal ruim 130 miljoen mensen in de delta. Zoveel mensen in een delta heeft als gevolg dat het er enorm verstedelijkt is met de volgende steden:</p>
+<div class="datawrapper">
+<iframe title="Grootste Steden in Pakistan &amp;amp; Bangladesh" aria-label="Bar Chart" id="datawrapper-chart-booZ8" src="//datawrapper.dwcdn.net/booZ8/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="633"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+</div>
+</div>
+
+<!--leaflet-->
+<div id="mapid" style="width: 700px; height: 500px;">
+  <script>var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+  	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+  		maxZoom: 18,
+  		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+  			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+  			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  		id: 'mapbox/streets-v11'
+  	}).addTo(mymap);
+  </script>
+</div>
+
+
+
+
+
 
 
 

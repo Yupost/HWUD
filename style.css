@@ -84,11 +84,6 @@ figcaption {
 .locals_logo {width: 15%}
 
 
-
-/*.locals_img {}
-//.locals_content
-*/
-
 .img_locals{width: 200px; height: 100%  ; object-fit: cover;
 
 }
@@ -112,3 +107,14 @@ figcaption {
 }
 
 h2.urbandeltas { background-color:#F4AF00; }
+
+.demografie{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  background-color:#3087AD;
+}
+
+img.demografie{
+  width: 200px; height: 100%  ; object-fit: cover;
+}
